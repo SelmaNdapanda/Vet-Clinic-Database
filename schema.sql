@@ -43,3 +43,16 @@ CREATE TABLE vets(
   age INT NOT NULL,
   date_of_graduation DATE NOT NULL
 );
+
+--Create a "join table" called specializations to handle the many-to-many relationship between species and vets
+CREATE TABLE specializations(
+  vets_id INT REFERENCES vets(id),
+  species_id INT REFERENCES species(id)
+);
+
+--Create a "join table" called visits to handle the many-to-many relationship between animals and vets
+CREATE TABLE visits(
+  vet_id INT REFERENCES vets(id),
+  animal_id INT REFERENCES animals(id),
+  date_of_visit DATE
+);
