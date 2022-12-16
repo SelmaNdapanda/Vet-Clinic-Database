@@ -62,4 +62,44 @@ SET owner_id =
 UPDATE animals
 SET owner_id = 
     (SELECT id FROM owners WHERE full_name = 'Dean Winchester')
-    WHERE name IN ('Angemon', 'Boarmon');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          
+    WHERE name IN ('Angemon', 'Boarmon'); 
+
+-- Insert data for vets
+INSERT INTO vets (name, age, date_of_graduation) 
+VALUES 
+('William Tatcher', 45, '2000-04-23'),
+('Maisy Smith', 26, '2019-01-17'),
+('Stephanie Mendez', 64, '1981-05-04'),
+('Jack Harkness', 38, '2008-06-08');    
+
+-- Insert data for specialties
+INSERT INTO specializations (vets_id, species_id) 
+VALUES 
+(1, 1),
+(3, 2),
+(3, 1),
+(4, 2);
+
+-- Insert data for visits
+INSERT INTO visits (animal_id, vet_id, date_of_visit) 
+VALUES 
+(5, 1, '2020-05-24'),
+(5, 3, '2020-07-22'),
+(6, 4, '2021-02-02'),
+(9, 2, '2020-01-05'),
+(9, 2, '2020-03-08'),
+(9, 2, '2020-05-14'),
+(7, 3, '2021-05-04'),
+(3, 4, '2021-02-24'),
+(1, 2, '2019-12-21'),
+(1, 1, '2020-08-10'),
+(1, 2, '2021-04-07'),
+(4, 3, '2019-09-29'),
+(2, 4, '2020-10-03'),
+(2, 4, '2020-11-04'),
+(8, 2, '2019-01-24'),
+(8, 2, '2019-05-15'),
+(8, 2, '2020-02-27'),
+(8, 2, '2020-08-03'),
+(10, 3, '2020-05-24'),
+(10, 1, '2021-01-11');
