@@ -56,3 +56,6 @@ CREATE TABLE visits(
   animal_id INT REFERENCES animals(id),
   date_of_visit DATE
 );
+
+-- Add an email column to your owners table
+ALTER TABLE owners ADD COLUMN email VARCHAR(120);
