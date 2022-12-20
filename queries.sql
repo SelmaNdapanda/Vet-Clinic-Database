@@ -176,3 +176,11 @@ INNER JOIN species S ON A.species_id = S.id
 WHERE B.name = 'Maisy Smith'
 GROUP BY S.name
 ORDER BY visits DESC LIMIT 1;
+
+--Create queries to check performance
+
+EXPLAIN ANALYSE SELECT COUNT(*) FROM visits where animal_id = 4;
+
+EXPLAIN ANALYSE SELECT * FROM visits where vet_id = 2;
+
+EXPLAIN ANALYSE SELECT * FROM owners where email = 'owner_18327@mail.com';

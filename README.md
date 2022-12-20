@@ -138,7 +138,7 @@ Example:
 
 <!-- AUTHORS -->
 
-## 👥 Author<a name="authors"></a>
+## 👥 Authors<a name="authors"></a>
 
 👤 **Selma Hamutenya**
 
@@ -146,6 +146,10 @@ Example:
 - Twitter: [@SellohBlaq](https://twitter.com/sellohBlaq)
 - LinkedIn: [selma-hamutenya](www.linkedin.com/in/selma-hamutenya)
 
+👤 **Kareem Magdy Wilson**
+
+- GitHub: [@KareemWilson](https://github.com/KareemWilson)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/kareem-wilsons)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
