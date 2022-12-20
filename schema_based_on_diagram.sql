@@ -35,3 +35,10 @@ CREATE TABLE treatments (
     type VARCHAR(120),
     name VARCHAR(120)
 );
+
+--Create a "join table" called medical_histories_treatments to handle the many-to-many relationship between medical_histories and treatment
+
+CREATE TABLE medical_histories_treatments (
+    medical_history__id INT REFERENCES medical_histories(id),
+    treatments_id INT REFERENCES treatments(id)
+);
