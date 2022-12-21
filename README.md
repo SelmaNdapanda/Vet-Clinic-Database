@@ -66,6 +66,9 @@
 
 To get a local copy up and running, follow these steps.
 
+**Here is the diagram of database using [Lucid chart](locid.app)**
+![database diagram](image.png)
+
 ### Prerequisites
 
 In order to run this project you need:
